@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Metamorphous|UnifrakturMaguntia');
 body {
     text-align: center;
     max-width: 960px;
+    font-family: 'Metamorphous', cursive;
 }
 
 .house-img {
@@ -23,5 +25,9 @@ button {
     height: 50px;
     width: 150px;
     font-size: 18px;
+    font-family: 'Metamorphous', cursive;
 
+}
+h1, h2 {
+    font-family: 'UnifrakturMaguntia', cursive;
 }
