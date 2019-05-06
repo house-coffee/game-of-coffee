@@ -19,7 +19,7 @@
         <h2>Are you ready to play? Spoilers included.</h2>
         <p>
             <label for="name">Your Name: </label>
-            <input id="name" type="text" placeholder="type name here">
+            <input id="name" name="name" placeholder="type name here">
         </p>
 
         <fieldset>
@@ -27,17 +27,17 @@
                 Choose Your House 
             </legend>
             <label>
-                <input type="radio">
+                <input type="radio" name="house" value="lannister">
                 <img class="house-img"src="assets/lannister.png" alt="lannister lion">
                 Lannister
             </label>
             <label>
-                <input type="radio" name="" id="">
+                <input type="radio" name="house" value="stark">
                 <img class="house-img" src="assets/stark.png" alt="stark wolf">
                 Stark
             </label>
             <label>
-                <input type="radio">
+                <input type="radio" name="house" value="targaryen">
                 <img class="house-img" src="assets/targaryen.jpg" alt="targaryen dragon">
                 Targaryen
             </label>
@@ -45,10 +45,10 @@
         <fieldset>
             <legend>Are you caffinated?</legend>
             <label>
-                <input type="radio" required>Yes
+                <input type="radio" name="caffeinated" value="yes" required>Yes
             </label>
             <label>
-                <input type="radio" required>No
+                <input type="radio" name="caffeinated" value="no" required>No
             </label>
         </fieldset>
         <button>Play the Game</button>
