@@ -1,20 +1,7 @@
-
+import createQuestLink from '../src/quests/create-quest-link.js';
 const test = QUnit.test;
 
 QUnit.module('create quest link');
-
-function createQuestLink(quest) {
-    const link = document.createElement('a');
-    link.classList.add('quest');
-
-    const searchParams = new URLSearchParams();
-    searchParams.set('id', quest.id);
-    link.href = 'quest.html' + searchParams.toString();
-
-    link.textContent = quest.title;
-
-    return link;
-}
 
 test('creates correct link html', (assert) => {
     //Arrange
