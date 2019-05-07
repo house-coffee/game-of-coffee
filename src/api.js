@@ -9,6 +9,9 @@ const api = {
         if(!json) return null;
         const user = JSON.parse(json);
         return user;
+    },
+    getQuests() {
+        return questData;
     }
 };
 export default api;
