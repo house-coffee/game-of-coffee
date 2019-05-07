@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Choose Your Fate</title>
-    <link rel="stylesheet" href="../src/index.css">
-    <link rel="stylesheet" href="./map.css">
+    <title>Quests</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../map/map.css">
+    <link rel="stylesheet" href="./quest.css">
 </head>
 <body>
-    <h1>Choose Your Adventure</h1>
+    <header>
+        <h1>Quest Page</h1>
+    </header>
     <main>
         <section class="map-container">
-            <section class="battles">
-                <p>The Red Wedding</p>
-                <p>Battle of Black Water</p>
-                <p>Battle of Winterfell</p>
+            <section>
+                <h2>Red Wedding</h2>
+                <img src="../../assets/redwedding.jpg" alt="scene from the red wedding">
             </section>
+
             <section id="sidebar">
-                <img id="avatar" src="../assets/stark.png" alt="stark">
+                <img id="avatar" src="../../assets/stark.png" alt="stark">
                 <ul>
                     <li>User Name: <span id="user-name"></span></li>
                     <li>Army: <span id="army"></span></li>
@@ -28,6 +31,5 @@
             </section>
         </section>
     </main>
-    <script type="module" src="map.js"></script>
 </body>
 </html>
