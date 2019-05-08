@@ -10,7 +10,7 @@ test('creates correct link html', (assert) => {
         id: 'blackwater',
         title: 'Battle of Blackwater',
     };
-    const expected = '<a class="quest" href="quest.htmlid=blackwater">Battle of Blackwater</a>';
+    const expected = '<a class="quest" href="quest.html?id=blackwater">Battle of Blackwater</a>';
 
     //Act
 

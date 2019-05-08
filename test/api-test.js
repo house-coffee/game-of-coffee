@@ -43,3 +43,17 @@ test('returns list of quest', (assert) => {
     //Assert
     assert.deepEqual(quests, expected);
 });
+
+test('returns quest by ID', (assert) => {
+    //Arrange
+    // Set up your parameters and expectations
+    const expectedQuest = questData[1];
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const foundQuest = api.getQuest(expectedQuest.id);
+
+
+    //Assert
+    assert.deepEqual(foundQuest, expectedQuest);
+});

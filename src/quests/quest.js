@@ -9,9 +9,9 @@ const questId = searchParams.get('id');
 const quest = api.getQuest(questId);
 console.log(quest);
 
-if(!quest) {
-    window.location = 'map.html';
-}
+// if(!quest) {
+//     window.location = 'map.html';
+// }
 
 const title = document.getElementById('title');
 const image = document.getElementById('image');
