@@ -16,12 +16,12 @@
     <main>
         <section class="map-container">
             <section>
-                <h2 id="title">Red Wedding</h2>
-                <img id="image" src="../../assets/redwedding.jpg" alt="scene from the red wedding">
+                <h2 id="title"></h2>
+                <img id="image">
             </section>
 
             <section id="sidebar">
-                <img id="avatar" src="../../assets/stark.png" alt="stark">
+                <img id="avatar">
                 <ul>
                     <li>User Name: <span id="user-name"></span></li>
                     <li>Army: <span id="army"></span></li>
@@ -32,29 +32,17 @@
         </section>
 
         <section>
-            <p id="description">
-                Edmure Tully is getting married to Roslin Frey! You are invited
-                to attend. Things start to get suspcious...
+            <p id="description">    
             </p>
         </section>
-        <fieldset>
-            <label>
-                <input type="radio">
-                Stay and enjoy the music 
-            </label>
-            <label>
-                <input type="radio">
-                You hear a wolf howl and go to investigate 
-            </label>
-            <label>
-                <input type="radio">
-                Just skip the whole thing 
-            </label>
+        <form id="choice-form">
+            <p id="choices"></p>
             <button>Pick your move</button>
-        </fieldset>
-        <section>
-            <h3>Outcome:</h3>
-            <p>You DIE!!</p>
+        </form>
+             
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../../map/map.html"></a>
         </section>
     </main>
 
