@@ -2,6 +2,7 @@ import loadProfile from '../../map/load-profile.js';
 import api from '../api.js';
 import findById from '../find-by-id.js';
 import createChoice from '../create-choice.js';
+import scoreQuest from '../score-quest.js';
 
 loadProfile();
 
@@ -22,6 +23,7 @@ const choices = document.getElementById('choices');
 const armyDisplay = document.getElementById('army');
 const moraleDisplay = document.getElementById('morale');
 const resultDescription = document.getElementById('result-description');
+const user = api.getUser();
 
 title.textContent = quest.title;
 image.src = 'assets/' + quest.image;
@@ -41,9 +43,11 @@ choiceForm.addEventListener('submit', function(event) {
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('radioButtons');
     const choice = findById(quest.choices, choiceId);
-    
+
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
-    console.log(choice); 
+    
+    api.saveUser(scoreQuest(user, choice)); 
+    loadProfile()
 });
