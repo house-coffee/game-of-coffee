@@ -1,6 +1,6 @@
 import loadProfile from '../../map/load-profile.js';
 import api from '../api.js';
-// import findById from '../find-by-id.js';
+import findById from '../find-by-id.js';
 import createChoice from '../create-choice.js';
 
 loadProfile();
@@ -19,6 +19,9 @@ const description = document.getElementById('description');
 const result = document.getElementById('result');
 const choiceForm = document.getElementById('choice-form');
 const choices = document.getElementById('choices');
+const armyDisplay = document.getElementById('army');
+const moraleDisplay = document.getElementById('morale');
+const resultDescription = document.getElementById('result-description');
 
 title.textContent = quest.title;
 image.src = 'assets/' + quest.image;
@@ -26,14 +29,21 @@ description.textContent = quest.description;
 
 
 for(let i = 0; i < quest.choices.length; i++) {
-    console.log('hi')
     const choice = quest.choices[i];
-    console.log(quest.choices.length);
     const questions = createChoice(choice);
-    console.log(choiceForm)
     choiceForm.appendChild(questions);
 
 }
 
+choiceForm.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-
+    const formData = new FormData(choiceForm);
+    const choiceId = formData.get('radioButtons');
+    const choice = findById(quest.choices, choiceId);
+    
+    choiceForm.classList.add('hidden');
+    result.classList.remove('hidden');
+    resultDescription.textContent = choice.result;
+    console.log(choice); 
+});

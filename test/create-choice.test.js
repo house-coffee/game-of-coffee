@@ -17,7 +17,7 @@ test('createChoice returns DOM elements', (assert) => {
         id: 'coffee',
         description: 'you drink some coffee'
     };
-    const expected = '<div><label>you drink some coffee</label><input type="radio" value="coffee" id="coffee"></div>'
+    const expected = '<div><label>you drink some coffee</label><input type="radio" value="coffee" id="coffee" name=\"radioButtons"></div>';
 
     //Act 
     // Call the function you're testing and set the result to a const
