@@ -7,7 +7,6 @@ loadProfile();
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 const quest = api.getQuest(questId);
-console.log(quest);
 
 // if(!quest) {
 //     window.location = 'map.html';
