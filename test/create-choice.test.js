@@ -17,17 +17,12 @@ test('createChoice returns DOM elements', (assert) => {
         id: 'coffee',
         description: 'you drink some coffee'
     };
-    const expected = `
-        <div>
-            <label>you drink some coffee</label>
-            <input type="radio" name="answer" id="coffee">
-        </div>
-    `;
+    const expected = `<div><label>you drink some coffee</label><input type="radio" value="coffee" id="coffee"></div>`;
 
     //Act 
     // Call the function you're testing and set the result to a const
     const result = createChoice(choice);
 
     //Assert
-    assert.deepEqual(expected, result);
+    assert.deepEqual(result, expected);
 });
