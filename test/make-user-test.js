@@ -11,6 +11,7 @@ test('time to test a function', function(assert) {
     formData.set('army', 100);
     formData.set('morale', 50);
     formData.set('caffeinated', 'yes');
+    formData.set('completed', true);
 
     const expected = {
         name: 'LA',
@@ -18,6 +19,7 @@ test('time to test a function', function(assert) {
         army: 100,
         morale: 50,
         caffeinated: 'yes',
+        completed: {},
     };
 
     //Act 

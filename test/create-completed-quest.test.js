@@ -1,16 +1,7 @@
+import createCompletedQuest from '../src/create-completed-quest.js';
 const test = QUnit.test;
 
 QUnit.module('create completed test');
-
-function createCompletedQuestLink(quest) {
-    const span = document.createElement('span');
-    span.classList.add('quest');
-    span.classList.add('completed');
-
-    span.textContent = quest.title;
-
-    return span;
-}
 
 test('creates completed quest test, should disable link', (assert) => {
     //Arrange
@@ -24,7 +15,7 @@ test('creates completed quest test, should disable link', (assert) => {
     //Act
 
     // Call the function you're testing and set the result to a const
-    const dom = createCompletedQuestLink(quest);
+    const dom = createCompletedQuest(quest);
  
     //Assert
     assert.equal(dom.outerHTML, expected);

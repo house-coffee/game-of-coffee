@@ -4,7 +4,8 @@ function makeUser(formData) {
         house: formData.get('house'),
         army: 100,
         morale: 50,
-        caffeinated: formData.get('caffeinated')
+        caffeinated: formData.get('caffeinated'),
+        completed: {},
     };
 
     return user;
