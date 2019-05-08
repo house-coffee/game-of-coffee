@@ -1,3 +1,5 @@
+import questData from './quests/quest-data.js';
+
 const api = {
     storage: localStorage,
     signUp(user) {

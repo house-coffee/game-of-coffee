@@ -1,3 +1,5 @@
+import api from '../src/api.js';
+
 function loadProfile() {
     const avatar = document.getElementById('avatar');
     const userName = document.getElementById('user-name');
