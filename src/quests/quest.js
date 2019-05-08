@@ -19,9 +19,6 @@ const image = document.getElementById('image');
 const description = document.getElementById('description');
 const result = document.getElementById('result');
 const choiceForm = document.getElementById('choice-form');
-const choices = document.getElementById('choices');
-const armyDisplay = document.getElementById('army');
-const moraleDisplay = document.getElementById('morale');
 const resultDescription = document.getElementById('result-description');
 const user = api.getUser();
 
@@ -29,12 +26,10 @@ title.textContent = quest.title;
 image.src = 'assets/' + quest.image;
 description.textContent = quest.description;
 
-
 for(let i = 0; i < quest.choices.length; i++) {
     const choice = quest.choices[i];
     const questions = createChoice(choice);
     choiceForm.appendChild(questions);
-
 }
 
 choiceForm.addEventListener('submit', function(event) {

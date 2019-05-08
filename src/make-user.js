@@ -7,7 +7,6 @@ function makeUser(formData) {
         caffeinated: formData.get('caffeinated'),
         completed: {},
     };
-
     return user;
 }
 export default makeUser;
