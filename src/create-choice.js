@@ -3,13 +3,14 @@ function createChoice(choice) {
     const label = document.createElement('label');
     const input = document.createElement('input');
     label.textContent = choice.description;
+    
     div.appendChild(label);
     input.setAttribute('type', 'radio');
     input.value = choice.id;
     input.id = choice.id;
     
     div.appendChild(input);
-    return div.outerHTML;
+    return div;
 }
 
 export default createChoice;
