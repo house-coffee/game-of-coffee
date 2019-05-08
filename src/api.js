@@ -3,7 +3,7 @@ import findById from './find-by-id.js';
 
 const api = {
     storage: localStorage,
-    signUp(user) {
+    saveUser(user) {
         const json = JSON.stringify(user);
         api.storage.setItem('user', json);
     },

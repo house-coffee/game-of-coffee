@@ -10,7 +10,7 @@ QUnit.testStart(() => {
     sessionStorage.clear();
 });
 
-test('signUp sets user and returns on getUSer', (assert) => {
+test('saves user sets user and returns on getUSer', (assert) => {
     //Arrange
     // Set up your parameters and expectations
     const user = {
@@ -23,7 +23,7 @@ test('signUp sets user and returns on getUSer', (assert) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    api.signUp(user);
+    api.saveUser(user);
     const result = api.getUser();
 
     //Assert

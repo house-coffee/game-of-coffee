@@ -1,14 +1,14 @@
 import makeUser from './make-user.js';
 import api from './api.js';
 
-const userSignUp = document.getElementById('user-sign-up');
+const userSaveUser = document.getElementById('user-sign-up');
 
-userSignUp.addEventListener('submit', () => {
+userSaveUser.addEventListener('submit', () => {
     event.preventDefault();
 
-    const formData = new FormData(userSignUp);
+    const formData = new FormData(userSaveUser);
     const user = makeUser(formData);
-    api.signUp(user);
+    api.saveUser(user);
 
     window.location = './map.html';
 });
