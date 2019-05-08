@@ -10,6 +10,7 @@ const section = document.getElementById('battles');
 for(let i = 0; i < quests.length; i++) {
     const quest = quests[i];
     const link = createQuestLink(quest);
+    console.log('link', link);
     section.appendChild(link);
 }
 

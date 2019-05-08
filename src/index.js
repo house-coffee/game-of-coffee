@@ -10,5 +10,5 @@ userSignUp.addEventListener('submit', () => {
     const user = makeUser(formData);
     api.signUp(user);
 
-    window.location = './map/map.html';
+    window.location = './map.html';
 });
