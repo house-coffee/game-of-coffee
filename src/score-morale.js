@@ -1,9 +1,10 @@
 function scoreMorale(morale) {
-    if (morale > 50) {
-        return 'iron throne';
+    console.log('score function', morale);
+    if(morale > 50) {
+        return 'throne';
     } 
     else if(morale > 0) {
-        return 'go home';
+        return 'home';
     }
     else {
         return 'dead';
