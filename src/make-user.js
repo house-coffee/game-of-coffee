@@ -5,7 +5,11 @@ function makeUser(formData) {
         army: 100,
         morale: 50,
         caffeinated: formData.get('caffeinated'),
-        completed: {},
+        completed: {
+            quest1: false,
+            quest2: false,
+            quest3: false
+        },
     };
     return user;
 }
