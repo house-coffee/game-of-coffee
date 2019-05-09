@@ -6,3 +6,4 @@ import './create-choice.test.js';
 import './has-completed-all-quests.test.js';
 import './is-dead.test.js';
 import './score-army.test.js';
+import './score-morale.test.js';
