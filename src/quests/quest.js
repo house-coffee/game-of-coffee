@@ -10,10 +10,6 @@ const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 const quest = api.getQuest(questId);
 
-// if(!quest) {
-//     window.location = 'map.html';
-// }
-
 const title = document.getElementById('title');
 const image = document.getElementById('image');
 const description = document.getElementById('description');

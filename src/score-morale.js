@@ -1,5 +1,4 @@
 function scoreMorale(morale) {
-    console.log('score function', morale);
     if(morale >= 50) {
         return 'throne';
     } 

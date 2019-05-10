@@ -13,14 +13,14 @@ const storyDisplay = document.getElementById('story-display');
 const armyResults = scoreArmy(user.army);
 const moraleResults = scoreMorale(user.morale);
 
-const moraleDictionary = moraleMessages[moraleResults];
-const armyDictionary = armyMessages[armyResults];
+const moraleString = moraleMessages[moraleResults];
+const armyString = armyMessages[armyResults];
 
 let story = `You've completed all the battles...`;
 
 if(armyResults === 'dead') {
-    story += armyDictionary;
+    story += armyString;
 } else {
-    story += armyDictionary + moraleDictionary;
+    story += armyString + moraleString;
 } 
 storyDisplay.textContent = story;

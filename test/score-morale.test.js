@@ -8,7 +8,7 @@ test('test morale, iron throne', (assert) => {
     // Set up your parameters and expectations
     const user = {
         morale: 60
-    }
+    };
 
     //Act
     // Call the function you're testing and set the result to a const
@@ -25,7 +25,7 @@ test('test morale, go home', (assert) => {
     // Set up your parameters and expectations
     const user = {
         morale: 10
-    }
+    };
 
     //Act
     // Call the function you're testing and set the result to a const

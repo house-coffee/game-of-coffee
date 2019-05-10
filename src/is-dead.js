@@ -1,4 +1,4 @@
-function isDead (user) {
+function isDead(user) {
     return user.army <= 0;
 }
 
