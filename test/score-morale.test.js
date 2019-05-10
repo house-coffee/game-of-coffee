@@ -42,7 +42,7 @@ test('test morale, dead', (assert) => {
     // Set up your parameters and expectations
     const user = {
         morale: 0
-    }
+    };
 
     //Act
     // Call the function you're testing and set the result to a const

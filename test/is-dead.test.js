@@ -9,7 +9,7 @@ test('you are dead', (assert) => {
     // Set up your parameters and expectations
     const user = {
         army: 0
-    }
+    };
 
     //Act
     // Call the function you're testing and set the result to a const
@@ -26,7 +26,7 @@ test('you are NOT dead', (assert) => {
     // Set up your parameters and expectations
     const user = {
         army: 10
-    }
+    };
 
     //Act
     // Call the function you're testing and set the result to a const
