@@ -12,26 +12,9 @@ const user = api.getUser();
 const storyDisplay = document.getElementById('story-display');
 const armyResults = scoreArmy(user.army);
 const moraleResults = scoreMorale(user.morale);
-console.log(armyResults);
-console.log(moraleResults);
-
-// let displayMessage = {};
-
-// if(armyResults === 'alive') {
-//     if(moraleResults === 'throne' || moraleResults === 'home') {
-//         displayMessage[armyResults] = armyMessages[armyResults];
-//         displayMessage[moraleResults] = moraleMessages[moraleResults];
-//         console.log(displayMessage);
-//     }
-// }
-// else {
-//     displayMessage[armyResults] = armyMessages[armyResults];
-// }
 
 const moraleDictionary = moraleMessages[moraleResults];
 const armyDictionary = armyMessages[armyResults];
-console.log(moraleDictionary);
-console.log(armyDictionary);
 
 let story = `You've completed all the battles...`;
 

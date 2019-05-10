@@ -16,7 +16,7 @@ test('test morale, iron throne', (assert) => {
 
  
     //Assert
-    assert.equal(morale, 'iron throne');
+    assert.equal(morale, 'throne');
 
 });
 
@@ -33,7 +33,7 @@ test('test morale, go home', (assert) => {
 
  
     //Assert
-    assert.equal(morale, 'go home');
+    assert.equal(morale, 'home');
 
 });
 
