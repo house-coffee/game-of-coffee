@@ -14,31 +14,30 @@ const armyResults = scoreArmy(user.army);
 const moraleResults = scoreMorale(user.morale);
 console.log(armyResults);
 console.log(moraleResults);
-let displayMessage = null;
 
-if(armyResults === 'alive') {
-    if(moraleResults === 'throne') {
-        displayMessage = moraleMessages + armyMessages;
-        console.log(displayMessage);
-    }
-    else if(moraleResults === 'home') {
-        displayMessage = moraleMessages + armyMessages;
-        console.log(displayMessage);
-    }
-}
-else {
-    displayMessage = armyMessages;
-}
+// let displayMessage = {};
 
-const moraleDictionary = displayMessage[moraleResults];
-const armyDictionary = displayMessage[armyResults];
+// if(armyResults === 'alive') {
+//     if(moraleResults === 'throne' || moraleResults === 'home') {
+//         displayMessage[armyResults] = armyMessages[armyResults];
+//         displayMessage[moraleResults] = moraleMessages[moraleResults];
+//         console.log(displayMessage);
+//     }
+// }
+// else {
+//     displayMessage[armyResults] = armyMessages[armyResults];
+// }
+
+const moraleDictionary = moraleMessages[moraleResults];
+const armyDictionary = armyMessages[armyResults];
 console.log(moraleDictionary);
 console.log(armyDictionary);
-console.log(displayMessage);
+
 let story = `You've completed all the battles...`;
-if(!moraleDictionary) {
+
+if(armyResults === 'dead') {
     story += armyDictionary;
 } else {
-    story += moraleDictionary + armyDictionary;
-}
+    story += armyDictionary + moraleDictionary;
+} 
 storyDisplay.textContent = story;
